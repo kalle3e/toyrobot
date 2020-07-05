@@ -10,7 +10,7 @@ $store = new XyfStore();
 for ($i=0; $i < count($fline); $i++)
 {
     $line = explode(' ', $fline[$i]);
-    if (count($line) > 1 && 'PLACE' !== $line[0])
+    if (count($line) > 1 && PLACE !== $line[0])
     {
             echo PHP_EOL;
             echo '====================================================';
@@ -21,7 +21,7 @@ for ($i=0; $i < count($fline); $i++)
             echo PHP_EOL;
             exit;
     }
-    if ('PLACE' == rtrim($line[0]))
+    if (PLACE == rtrim($line[0]))
     {
         $store = storeXyfPlace($line[1]);
         $storeXy = $store;
