@@ -6,7 +6,7 @@ class XyfPlace
     public $y;
     public $f;
 }
-class processXyf
+class XyfStore
 {
     public $x = 0;
     public $y = 0;
@@ -21,12 +21,19 @@ function storeXyfPlace($linePlace)
     /**
      *  e.g PLACE 0,0,NORTH
      */
-    $dataStore = new processXyf();
+    $dataStore = new XyfStore();
     $line = explode(',', $linePlace);
 
     if( !is_numeric( rtrim($line[0]) ) || !is_numeric( rtrim($line[1]) ) )
     {
-        errorDisplay();
+        echo PHP_EOL;
+        echo '====================================================';
+        echo PHP_EOL;
+        echo 'Invalid. Enter again!';
+        echo PHP_EOL;
+        echo '====================================================';
+        echo PHP_EOL;
+        exit;
     }
     $dataStore->x = intval($line[0]);
     $dataStore->y = intval($line[1]);
@@ -38,7 +45,7 @@ function storeXyfPlace($linePlace)
 
 function setLR($lrFlag)
 {
-    $lStore = new processXyf();
+    $lStore = new XyfStore();
     if (LEFT == $lrFlag)
     {
         $lStore->lStep = true;
