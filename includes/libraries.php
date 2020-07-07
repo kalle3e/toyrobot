@@ -21,7 +21,7 @@ class processXyf
         }
         $this->x = intval($line[0]);
         $this->y = intval($line[1]);
-        $this->f = intval($line[2]);
+        $this->f = $line[2];
         $this->fNew = rtrim($line[2]);
 
         return $this;
