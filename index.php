@@ -43,7 +43,7 @@ for ($i=0; $i < count($fline); $i++)
                 break;
             case LEFT:
                 $store->leftRight = LEFT;
-                $store = getFacingDirectionNew();
+                $store->getFacingDirectionNew();
                 break;
             case RIGHT:
                 $store->leftRight = RIGHT;
