@@ -6,7 +6,6 @@ $fline = file('Files/instructionsData.txt');
 $moveCount = 0;
 $j = 0;
 $store = new processXyf();
-$isPlace = true;
 $news = [NORTH, SOUTH, EAST, WEST];
 
 for ($i=0; $i < count($fline); $i++)
