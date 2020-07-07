@@ -3,7 +3,6 @@ include 'Includes/libraries.php';
 
 $fline = file('Files/instructionsData.txt');
 
-$moveCount = 0;
 $store = new processXyf();
 $news = [NORTH, SOUTH, EAST, WEST];
 
