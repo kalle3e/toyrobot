@@ -12,10 +12,4 @@ Please note all of the above words in caps are a valid commands
 Multiple PLACE lines (a set of commands) are allowed.
 
 Input file used is called: instructionsData.txt
-PLEASE NOTE: 
-The program will output unexpected results:
-1. If there are more than one PLACE lines, one immediately after another 
-2. If REPORT line is placed without a PLACE line before it.
-It's just logic.
-
 When a blank line is detected the program marks it's the end of file.
