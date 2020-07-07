@@ -111,6 +111,7 @@ class processXyf
                     if ($this->leftRight == $leftRightStepC)
                     {
                         $this->fNew = $newsNew;
+                        $this->f    = $newsNew;
                         return;
                     }
                 }
